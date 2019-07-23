@@ -1,5 +1,4 @@
-(declaim (optimize (debug 3) (speed 0) (space 0)))
-(defun quick-sort (obj &optional left-bound right-bound)
+(defun quick-sort-list (obj &optional left-bound right-bound)
   (let ((pivot 0)
 	(left-bound (if (not left-bound) 0 left-bound))
 	(swap-index -1)
